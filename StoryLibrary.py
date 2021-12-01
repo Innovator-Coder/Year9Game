@@ -1,28 +1,31 @@
 import random
 import time
 
-storynames = ["Adventure 1","Adventure 2","Adventure 3"]
 
-def adventure1():
-    print("this is an adventure 1.")
+def theThunderDome():
+    print("I have chosen for you... The.... THUNDER DOME")
+    time.sleep(1)
+    guardans = input("Do you want to talk to the Guard?\n")
+    if "yes" in guardans:
+        print("I am Marcus, the guard of the THUNDER DOME. Be thankful you have requested for my help")
+    elif "no" in guardans:
+        print("Very well then, be advised that it will be very challenging ")
+    
 
-adv1 = adventure1
+def theDragonsDen():
+    print("We have chosen for you... The.... DRAGONS DEN")
+    time.sleep(1)
 
-def adventure2():
-    print("this is an adventure 2.")
+def theEscape():
+    print("We have chosen for you... The.... The ESCAPE")
+    time.sleep(1)
 
-adv2 = adventure2
-
-def adventure3():
-    print("this is an adventure 3.")
-
-adv3 = adventure3
-
-randnum = random.randint(0,2)
 
 def randomStory():
     print("The Random Adventure is.... (Drum Roll Please...Come on...)")
-    time.sleep(1)
-    print(storynames[randnum])
-    functionList = [adv1,adv2,adv3]
-    functionList[randnum]
+    #Insert Drum Roll Sound here
+    time.sleep(3)
+    functionList = [theThunderDome,theDragonsDen,theEscape]
+    adventure = random.choice(functionList) 
+    adventure()
+

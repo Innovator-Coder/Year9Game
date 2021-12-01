@@ -16,7 +16,6 @@ time.sleep(1)
 print("We have 3 epic games! Firstly... ")
 
 
-
 dome1 ="                      .---.                  .---.                        "
 dome2 ="                      |  .'                  |  .'                        "
 dome3 ="                       |-'                    |-'                         "
@@ -68,6 +67,8 @@ dome48="|              | `:\                            /:` |              |    
 dome49="|              | ' .`                          `. ' |              |      "
 dome50="|              |--`                              `--|              |      "
 dome51="`--...____...--'                                    `--...____...--'      "
+
+
 
 colourdome1=termcolor.colored(dome1,'red',"on_grey")
 colourdome2=termcolor.colored(dome2,'yellow',"on_grey")
@@ -174,7 +175,9 @@ print(colourdome49)
 print(colourdome50)
 print(colourdome51)
 
-time.sleep(1)
+
+
+time.sleep(2)
 
 print("████████╗██╗  ██╗███████╗    ████████╗██╗  ██╗██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  ██████╗ ███╗   ███╗███████╗")
 print("╚══██╔══╝██║  ██║██╔════╝    ╚══██╔══╝██║  ██║██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██╔══██╗██╔═══██╗████╗ ████║██╔════╝")
@@ -185,6 +188,193 @@ print("   ╚═╝   ╚═╝  ╚═╝╚══════╝       ╚═�
 
 time.sleep(1)
 
+print("The next game is....")
+
+time.sleep(1)
 
 
-#story.randomStory()
+head1 ="(                                           "
+head2 =" )                      _____               "   
+head3 ="(  ___                 / _   \              "
+head4 ="\/   \\____-----------/ (o)   \\_             "
+head5 ="(  O                           \____        "
+head6 =" \\_____________  `              \\  /        "
+head7 ="    VVVVVVV VV V\                 \\/        "
+head8 =" (--  _AAAAAAA__A_/                  |      "
+head9 ="\\______________//_              \_______    "
+head10="                    \\___'          \\     /  "
+head11="                        |           \   /   "
+head12="                       /              \/    "
+head13="                      /                  \  "
+
+fire1 ="   (  )   /\   _                 "
+fire2 ="    \ |  (  \ ( \.(              "
+fire3 ="  \  \ \  `  `   ) \             "
+fire4 =" (_`    \+   . x  ( .\           "
+fire5 ="- .-               \+  ;         "
+fire6 ="                          )      "
+fire7 ="(__                +- .( -'.- <. "
+fire8 ="(_____            ._._: <_ - <- _"
+fire9 ="  .    /./.+-  . .- /  +--  - .  "
+fire10="  (__ ' /x  / x _/ (             "
+fire11=" , x / ( '  . / .  /             "
+fire12="    /  /  _/ /    +              "
+fire13="   '  (__/                       "
+
+
+colourfire1=termcolor.colored(fire1,'red',"on_grey")
+colourfire2=termcolor.colored(fire2,'red',"on_grey")
+colourfire3=termcolor.colored(fire3,'red',"on_grey")
+colourfire4=termcolor.colored(fire4,'red',"on_grey")
+colourfire5=termcolor.colored(fire5,'red',"on_grey")
+colourfire6=termcolor.colored(fire6,'red',"on_grey")
+colourfire7=termcolor.colored(fire7,'red',"on_grey")
+colourfire8=termcolor.colored(fire8,'red',"on_grey")
+colourfire9=termcolor.colored(fire9,'red',"on_grey")
+colourfire10=termcolor.colored(fire10,'red',"on_grey")
+colourfire11=termcolor.colored(fire11,'red',"on_grey")
+colourfire12=termcolor.colored(fire12,'red',"on_grey")
+colourfire13=termcolor.colored(fire13,'red',"on_grey")
+
+
+colourhead1=termcolor.colored(head1,'white',"on_grey")
+colourhead2=termcolor.colored(head2,'white',"on_grey")
+colourhead3=termcolor.colored(head3,'white',"on_grey")
+colourhead4=termcolor.colored(head4,'white',"on_grey")
+colourhead5=termcolor.colored(head5,'white',"on_grey")
+colourhead6=termcolor.colored(head6,'white',"on_grey")
+colourhead7=termcolor.colored(head7,'white',"on_grey")
+colourhead8=termcolor.colored(head8,'white',"on_grey")
+colourhead9=termcolor.colored(head9,'white',"on_grey")
+colourhead10=termcolor.colored(head10,'white',"on_grey")
+colourhead11=termcolor.colored(head11,'white',"on_grey")
+colourhead12=termcolor.colored(head12,'white',"on_grey")
+colourhead13=termcolor.colored(head13,'white',"on_grey")
+
+print(colourfire1 + colourhead1)
+print(colourfire2 + colourhead2)
+print(colourfire3 + colourhead3)
+print(colourfire4 + colourhead4)
+print(colourfire5 + colourhead5)
+print(colourfire6 + colourhead6)
+print(colourfire7 + colourhead7)
+print(colourfire8 + colourhead8)
+print(colourfire9 + colourhead9)
+print(colourfire10 + colourhead10)
+print(colourfire11 + colourhead11)
+print(colourfire12 + colourhead12)
+print(colourfire13 + colourhead13)
+
+time.sleep(1)
+
+print("                     (                                              (               ")
+print("  *   )    )         )\ )                                           )\ )            ")
+print("` )  /( ( /(    (   (()/(   (       )  (  (                         (()/(     (     ") 
+print(" ( )(_)))\())  ))\   /(_))  )(   ( /(  )\))(  (    (      (          /(_))   ))\  ( ")
+print("(_(_())((_)\  /((_) (_))_  (()\  )(_))((_))\  )\   )\ )   )\     (_))_   /((_) )\ ) ") 
+print("|_   _|| |(_)(_))    |   \  ((_)((_)_  (()(_)((_) _(_/(  ((_)    |   \ (_))  _(_/(  ")
+print("  | |  | ' \ / -_)   | |) || '_|/ _` |/ _` |/ _ \| ' \)) (_-<    | |) |/ -_)| ' \)) ")
+print("  |_|  |_||_|\___|   |___/ |_|  \__,_|\__, |\___/|_||_|  /__/    |___/ \___||_||_|  ")
+print("                                     |___/                                            ")
+
+time.sleep(1)
+
+print("The final game is...")
+
+time.sleep(1)
+
+bomb1 = "                               ________________                                "
+bomb2 = "                          ____/ (  (    )   )  \___                            "
+bomb3 = "                         /( (  (  )   _    ))  )   )\\                          "
+bomb4 = "                       ((     (   )(    )  )   (   )  )                        "
+bomb5 = "                     ((/  ( _(   )   (   _) ) (  () )  )                       "
+bomb6 = "                    ( (  ( (_)   ((    (   )  .((_ ) .  )_                     "
+bomb7 = "                   ( (  )    (      (  )    )   ) . ) (   )                    "
+bomb8 = "                  (  (   (  (   ) (  _  ( _) ).  ) . ) ) ( )                   "            
+bomb9 = "                  ( (  (   ) (  )   (  ))     ) _)(   )  )  )                  "
+bomb10 = "                 ( (  ( \ ) (    (_  ( ) ( )  )   ) )  )) ( )                  "
+bomb11 = "                  (  (   (  (   (_ ( ) ( _    )  ) (  )  )   )                 "
+bomb12 = "                ( (  ( (  (  )     (_  )  ) )  _)   ) _( ( )                   "
+bomb13 = "                  ((  (   )(    (     _    )   _) _(_ (  (_ )                  "
+bomb14 = "                  (_((__(_(__(( ( ( |  ) ) ) )_))__))_)___)                    "
+bomb15 = "                   ((__)        \\\\||lll|l||///          \_))                   "
+bomb16 = "                            (   /(/ (  )  ) )\   )                             "
+bomb17 = "                          (    ( ( ( | | ) ) )\   )                            "
+bomb18 = "                           (   /(| / ( )) ) ) )) )                             "
+bomb19 = "                         (     ( ((((_(|)_)))))     )                          "
+bomb20 = "                          (      ||\(|(|)|/||     )                            "
+bomb21 = "                        (        |(||(||)||||        )                         "
+bomb22 = "                          (     //|/l|||)|\\\\ \     )                           "
+bomb23 = "                        (/ / //  /|//||||\\\\  \ \  \ _)                         "
+bomb24 = "-------------------------------------------------------------------------------"
+
+
+colourbomb1=termcolor.colored(bomb1,'red',"on_white")
+colourbomb2=termcolor.colored(bomb2,'red',"on_white")
+colourbomb3=termcolor.colored(bomb3,'red',"on_white")
+colourbomb4=termcolor.colored(bomb4,'red',"on_white")
+colourbomb5=termcolor.colored(bomb5,'red',"on_white")
+colourbomb6=termcolor.colored(bomb6,'red',"on_white")
+colourbomb7=termcolor.colored(bomb7,'red',"on_white")
+colourbomb8=termcolor.colored(bomb8,'red',"on_white")
+colourbomb9=termcolor.colored(bomb9,'red',"on_white")
+colourbomb10=termcolor.colored(bomb10,'red',"on_white")
+colourbomb11=termcolor.colored(bomb11,'red',"on_white")
+colourbomb12=termcolor.colored(bomb12,'red',"on_white")
+colourbomb13=termcolor.colored(bomb13,'red',"on_white")
+colourbomb14=termcolor.colored(bomb14,'red',"on_white")
+colourbomb15=termcolor.colored(bomb15,'red',"on_white")
+
+colourbomb16=termcolor.colored(bomb16,'grey',"on_white")
+colourbomb17=termcolor.colored(bomb17,'grey',"on_white")
+colourbomb18=termcolor.colored(bomb18,'grey',"on_white")
+colourbomb19=termcolor.colored(bomb19,'grey',"on_white")
+colourbomb20=termcolor.colored(bomb20,'grey',"on_white")
+colourbomb21=termcolor.colored(bomb21,'grey',"on_white")
+colourbomb22=termcolor.colored(bomb22,'grey',"on_white")
+colourbomb23=termcolor.colored(bomb23,'grey',"on_white")
+colourbomb24=termcolor.colored(bomb24,'grey',"on_white")
+
+print(colourbomb1)
+print(colourbomb2)
+print(colourbomb3)
+print(colourbomb4)
+print(colourbomb5)
+print(colourbomb6)
+print(colourbomb7)
+print(colourbomb8)
+print(colourbomb9)
+print(colourbomb10)
+print(colourbomb11)
+print(colourbomb12)
+print(colourbomb13)
+print(colourbomb14)
+print(colourbomb15)
+print(colourbomb16)
+print(colourbomb17)
+print(colourbomb18)
+print(colourbomb19)
+print(colourbomb20)
+print(colourbomb21)
+print(colourbomb22)
+print(colourbomb23)
+print(colourbomb24)
+
+time.sleep(1)
+
+print(" _________  __              ________                                      ")
+print("|  _   _  |[  |            |_   __  |                                     ")
+print("|_/ | | \_| | |--.  .---.    | |_ \_| .--.   .---.  ,--.  _ .--.   .---.  ")
+print("    | |     | .-. |/ /__\\\\   |  _| _ ( (`\] / /'`\]`'_\ :[ '/'`\ \/ /__\\\\ ")
+print("   _| |_    | | | || \__.,  _| |__/ | `'.'. | \__. // | |,| \__/ || \__., ")
+print("  |_____|  [___]|__]'.__.' |________|[\__) )'.___.'\\'-;__/| ;.__/  '.__.' ")
+print("                                                          [__|             ")
+
+time.sleep(1)
+
+print("All right, I will randomly chose a game for you to play! I promise it'll be fun!")
+
+time.sleep(3)
+
+story.randomStory()
+
