@@ -372,7 +372,7 @@ print("                                                          [__|           
 
 time.sleep(1)
 
-print("All right, I will randomly chose a game for you to play! I promise it'll be fun!")
+print("All right, I will randomly chose a game for you to play! I promise it'll be fun! I'll keep track of how many games you finish... If you need to know what your score is at any time, type 'score'")
 
 time.sleep(3)
 
