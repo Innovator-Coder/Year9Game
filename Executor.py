@@ -1,10 +1,14 @@
+#By: Malek Elhaddad
+#Based on Jabari Jumps
+#Target Audience: Grade 2
+#Game Name: The Marry-Go-Round
 import StoryLibrary as story
 import time 
 import termcolor
 
-
+#executor function
 def executor():
-
+    #greeting
     greeting = input("Hey it's Jabari! I'm going to send you off on a little journey! Are you excited?\n")
 
 
@@ -17,7 +21,7 @@ def executor():
 
     print("We have 3 epic games! Firstly... ")
 
-
+    #Dome text 
     dome1 ="                      .---.                  .---.                        "
     dome2 ="                      |  .'                  |  .'                        "
     dome3 ="                       |-'                    |-'                         "
@@ -71,7 +75,7 @@ def executor():
     dome51="`--...____...--'                                    `--...____...--'      "
 
 
-
+    #Dome Colour
     colourdome1=termcolor.colored(dome1,'red',"on_grey")
     colourdome2=termcolor.colored(dome2,'yellow',"on_grey")
     colourdome3=termcolor.colored(dome3,'green',"on_grey")
@@ -124,7 +128,7 @@ def executor():
     colourdome50=termcolor.colored(dome50,'blue',"on_grey")
     colourdome51=termcolor.colored(dome51,'magenta',"on_grey")
 
-
+    #Print Dome
     print(colourdome1)
     print(colourdome2)
     print(colourdome3)
@@ -178,7 +182,7 @@ def executor():
     print(colourdome51)
 
     time.sleep(2)
-
+    #Thunder Dome Text Art
     print("████████╗██╗  ██╗███████╗    ████████╗██╗  ██╗██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  ██████╗ ███╗   ███╗███████╗")
     print("╚══██╔══╝██║  ██║██╔════╝    ╚══██╔══╝██║  ██║██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██╔══██╗██╔═══██╗████╗ ████║██╔════╝")
     print("   ██║   ███████║█████╗         ██║   ███████║██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝    ██║  ██║██║   ██║██╔████╔██║█████╗  ")
@@ -192,7 +196,7 @@ def executor():
 
     time.sleep(1)
 
-
+    #dragon head
     head1 ="(                                           "
     head2 =" )                      _____               "   
     head3 ="(  ___                 / _   \              "
@@ -206,7 +210,7 @@ def executor():
     head11="                        |           \   /   "
     head12="                       /              \/    "
     head13="                      /                  \  "
-
+    #dragon flame
     fire1 ="   (  )   /\   _                 "
     fire2 ="    \ |  (  \ ( \.(              "
     fire3 ="  \  \ \  `  `   ) \             "
@@ -221,7 +225,7 @@ def executor():
     fire12="    /  /  _/ /    +              "
     fire13="   '  (__/                       "
 
-
+    #colour of fire
     colourfire1=termcolor.colored(fire1,'red',"on_grey")
     colourfire2=termcolor.colored(fire2,'red',"on_grey")
     colourfire3=termcolor.colored(fire3,'red',"on_grey")
@@ -236,7 +240,7 @@ def executor():
     colourfire12=termcolor.colored(fire12,'red',"on_grey")
     colourfire13=termcolor.colored(fire13,'red',"on_grey")
 
-
+    #colour of the dragon head
     colourhead1=termcolor.colored(head1,'white',"on_grey")
     colourhead2=termcolor.colored(head2,'white',"on_grey")
     colourhead3=termcolor.colored(head3,'white',"on_grey")
@@ -251,6 +255,7 @@ def executor():
     colourhead12=termcolor.colored(head12,'white',"on_grey")
     colourhead13=termcolor.colored(head13,'white',"on_grey")
 
+    #printing dragon
     print(colourfire1 + colourhead1)
     print(colourfire2 + colourhead2)
     print(colourfire3 + colourhead3)
@@ -266,7 +271,7 @@ def executor():
     print(colourfire13 + colourhead13)
 
     time.sleep(1)
-
+    #Dragon text art
     print("                     (                                              (               ")
     print("  *   )    )         )\ )                                           )\ )            ")
     print("` )  /( ( /(    (   (()/(   (       )  (  (                         (()/(     (     ") 
@@ -282,7 +287,7 @@ def executor():
     print("The final game is...")
 
     time.sleep(1)
-
+    #mushroom cloud in red
     bomb1 = "                               ________________                                "
     bomb2 = "                          ____/ (  (    )   )  \___                            "
     bomb3 = "                         /( (  (  )   _    ))  )   )\\                          "
@@ -298,6 +303,7 @@ def executor():
     bomb13 = "                  ((  (   )(    (     _    )   _) _(_ (  (_ )                  "
     bomb14 = "                  (_((__(_(__(( ( ( |  ) ) ) )_))__))_)___)                    "
     bomb15 = "                   ((__)        \\\\||lll|l||///          \_))                   "
+    #mushroom cloud in black
     bomb16 = "                            (   /(/ (  )  ) )\   )                             "
     bomb17 = "                          (    ( ( ( | | ) ) )\   )                            "
     bomb18 = "                           (   /(| / ( )) ) ) )) )                             "
@@ -308,7 +314,7 @@ def executor():
     bomb23 = "                        (/ / //  /|//||||\\\\  \ \  \ _)                         "
     bomb24 = "-------------------------------------------------------------------------------"
 
-
+    #colour
     colourbomb1=termcolor.colored(bomb1,'red',"on_white")
     colourbomb2=termcolor.colored(bomb2,'red',"on_white")
     colourbomb3=termcolor.colored(bomb3,'red',"on_white")
@@ -333,7 +339,7 @@ def executor():
     colourbomb22=termcolor.colored(bomb22,'grey',"on_white")
     colourbomb23=termcolor.colored(bomb23,'grey',"on_white")
     colourbomb24=termcolor.colored(bomb24,'grey',"on_white")
-
+    #print bomb
     print(colourbomb1)
     print(colourbomb2)
     print(colourbomb3)
@@ -360,7 +366,7 @@ def executor():
     print(colourbomb24)
 
     time.sleep(1)
-
+    #print the escape art
     print(" _________  __              ________                                      ")
     print("|  _   _  |[  |            |_   __  |                                     ")
     print("|_/ | | \_| | |--.  .---.    | |_ \_| .--.   .---.  ,--.  _ .--.   .---.  ")
@@ -377,5 +383,5 @@ def executor():
     time.sleep(5)
 
     story.randomStory()
-
+#executing function
 executor()

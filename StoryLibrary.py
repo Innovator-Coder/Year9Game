@@ -1,26 +1,30 @@
+#By: Malek Elhaddad
+#This is the Story Library for the executor file which executes this file.
+#Though this is the main file because there are many functions here that aren't executed in the Executor file but are executed here by other functions
+
 import random
 import time
 import playsound
 import termcolor
 import os
 
-whitestar = chr(9734)
-blackstar = chr(9733)
 
 #Michael Chen's Function
 def clearConsole():
     clear = lambda: os.system('clear')
     clear()
 
+#This is the helper and is used in every if else statement about a input, so that it is accessible at all times.
 def helper():
-    help = input("Help Menu:' \n\nSummary of Game: The Escape, The Dragons Den, The ThunderDome.\nIf you would like to check your score, input 'score'\n If you get 10 points, you will be ranked as a novice.\n If you get 20 points, you will be ranked as a VIP\n If you get 30 points you will be ranked as a VIP+\n If you get 40 points you will be ranked as MVP\n If you get 50 points you will be ranked as MVP+\n If you get 60 points you will be ranked as MASTER\nIf you would like the history of your story to be deleted and restarted input 'delete'\nTo check your rank, type 'rank'\n\n\nHave fun! : ")
+    help = input("Help Menu:' \n\nSummary of Game: The Escape, The Dragons Den, The ThunderDome.\nIf you would like to check your score, input 'score'\n If you get 10 points, you will be ranked as a novice.\n If you get 20 points, you will be ranked as a VIP\n If you get 30 points you will be ranked as a VIP+\n If you get 40 points you will be ranked as MVP\n If you get 50 points you will be ranked as MVP+\n If you get 60 points you will be ranked as MASTER\nIf you would like the history of your the story to be deleted, input 'delete'\nTo check your rank, type 'rank'\n\nHave fun! : ")
     time.sleep(2)
+    #Case of score
     if "score" in help.lower():
         wonnumber1 = int(input("How many times you have won a game (meaning you got every question right)? 'make sure to answer with a number like 1 or 2': "))
         losenumber1 = int(input("How many times you have lost a game (meaning you didn't get every question right)? 'make sure to answer with a number like 1 or 2': "))
         score1 = wonnumber1*10 -losenumber1*5
         print(score1)
-
+    #Case of rank
     if "rank" in help.lower():
 
         wonnumber2 = int(input("How many times you have won a game (meaning you got every question right)? 'make sure to answer with a number like 1 or 2': "))
@@ -44,19 +48,20 @@ def helper():
         elif score2 < 70:
             print("Master!") 
 
-    
-
+     #Case of delete
     if "delete" in help.lower():
         #Michael Chen's Function is below
         clearConsole()
 
-
+#Thunder Dome function
 def theThunderDome():
     playsound.playsound("Thunder.mp3")
     print("I have chosen for you... The.... THUNDER DOME")
     time.sleep(1)
+    #Help through guard question below
     guardans = input("Do you want to talk to the Guard? (type 'yes' or 'no')\n:")
     if "yes" in guardans.lower():
+        #Hint
         print("I am Marcus, the guard of the THUNDER DOME. Be thankful you have requested for my help: When you're getting colder, you're actually getting hotter... ")
         time.sleep(3) 
     elif "no" in guardans.lower():
@@ -67,7 +72,7 @@ def theThunderDome():
     else:
         print("Sorry I dont understand what you're trying to say :(, try again, I'll take it as a no")
         time.sleep(3) 
-
+    #Start of monologue
     print("Here is your puzzle! Grab a friend and try to crack it!") 
     time.sleep(3)       
     print("The challenge is...")
@@ -75,7 +80,9 @@ def theThunderDome():
     print("Find the Thunder wand! It is one of 8 rooms, one of them has it! Guess which one it is...")
     time.sleep(3)
     print("All the rooms are at different temperatures.")
+    #End of monologue
 
+    #Options
     print("Room 1 is at 35 Degrees Celsius")
     time.sleep(1)
     print("Room 2 is at 42 Degrees Celsius")
@@ -92,6 +99,7 @@ def theThunderDome():
     time.sleep(1)
     print("Room 8 is at -5 Degrees Celsius")
     time.sleep(1)
+    #Answer for the room question
     roomans = input("Enter the Room (like this 'Room 1' or 'Room 2'): ")
     if "Room 4" in roomans.lower():
         print("Correct!")
@@ -100,31 +108,32 @@ def theThunderDome():
     else:   
         print("Incorrect, but it's okay! No problem, lets try again!")
 
-
-
+    #Thunder Boss Battle AKA typing practice
     print("Good Job! Lets Battle the Boss, the Thunder Giant!")
     time.sleep(1)
     print("The Thunder Giant is here! He says 'Get ready to get defeated!' We wont let that happen! ")            
     time.sleep(2)
     print("You will have to write words as much as possible and as fast as possible to use your wand until he is defeated!")
     time.sleep(1)
-    attack1 = input("Write 'attack': ")
-    if "attack" in attack1.lower():
+    #test 1
+    attack1 = input("Write 'Attack the giant now!': ")
+    if "attack the giant now!" in attack1.lower():
         print("Good Job! You dealt a lot of damage!")
     elif "help" in attack1.lower():
         helper()
     else: 
         print("It's okay, lets move to the next word!")
         time.sleep(1)
-    attack2 = input("Write 'Wand': ")
-    if "wand" in attack2.lower():
+    #test 2
+    attack2 = input("Write 'Use the wand to cast a magic spell on him!': ")
+    if "use the wand to cast a magic spell on him!" in attack2.lower():
         print("Holy Moly! You're so good at this!")
         time.sleep(1)
     elif "help" in attack2.lower():
         helper()
     else: 
         print("It's okay, lets move to the next word!")
-
+    #test 3
     attack3 = input("Write 'Wizard': ")
     if "wizard" in attack3.lower():
         print("Holy Smokes! You defeated him! Good Job!")
@@ -134,30 +143,28 @@ def theThunderDome():
     else: 
         print("It's okay, learning to type is all about improvement! Lets try a different game!")
         time.sleep(3)
+    #finish game and randomise one of the 2 other games.
     print("Lets try out another game! What about a random game!")
     time.sleep(3)
     advthunder = [theDragonsDen,theEscape]
     advthunderrand = random.choice(advthunder)
     advthunderrand()
-    
-
-
-
-
-
 
 
 def theDragonsDen():
+    #Start of Monologue
     print("We have chosen for you... The.... DRAGONS DEN")
     time.sleep(2)
     playsound.playsound("gong.mp3")
     time.sleep(1)
     print("We stumble into his cave, HIS DEN, and he is ANGRY! We need to try to talk to him first before doing anything else!")
     time.sleep(3)
+    #End of Monologue
     calmdragonans = input("You should say something nice to try to calm the dragon down! What will you say? : ")
     if "help" in calmdragonans:
         helper()
     time.sleep(1)
+    #Start of Dialogue
     print("The dragon responds: Pff... just a bunch of kids LYING! And you're trying to steal my things!")
     time.sleep(2)
     print("I guess we can't do anything, lets challenge the dragon to a battle! I'll tell him!")
@@ -170,22 +177,27 @@ def theDragonsDen():
     time.sleep(2)
     print("We won't let that happen! Lets answer some of his math questions!")
     time.sleep(2)
+    #End of Dialogue
+    #Math Question 1 (Questions based on units from Khan Academy Grade 2 Curriculum)
     math1 = int(input("What number is the minute hand on when the time is 2:30 (make sure you're answer is only a number like 1 or 9): "))
     if math1 == 6:
         print("Correct! Let's try another question!")
     else:
         print("Incorrect. No problem though! Let's try another question!")
     time.sleep(2)
+    #Math Question 2
     math2 = int(input("Whats 4 x 5? (make sure you're answer is only a number like 1 or 9): "))
     if math2 == 20:
         print("Correct! Lets move on to the next question!")    
     else:
         print("Incorrect. Lets try another one!")
+    #Math Question 3
     math3 = int(input("How much money is 5 dimes and 2 quarters? (write the answer in cents): "))
     if math3 == 100:
         print("Correct! One last question!")
     else:
         print("Incorrect. Lets try one last one!")
+    #Math Question 4
     math4 = input("Does a backpack weight more similar to 7 grams, 7 kilograms, or 7 miligrams? : ")
     if "kilograms" in math4:
         print("Wow good job! You're right! Let's try another game!")
@@ -193,19 +205,10 @@ def theDragonsDen():
         helper()
     else:
         print("Incorrect. It's alright! Let's try another questions!")
+    #Randomize next game
     advdragons = [theThunderDome,theEscape]
     advdragonsrand = random.choice(advdragons)
     advdragonsrand()
-
-
-
-
-
-
-
-
-
-
 
 def theEscape():
     print("We have chosen for you... The.... The ESCAPE")
@@ -213,12 +216,15 @@ def theEscape():
     playsound.playsound("bomb.mp3")
     theEscapeAns = input("You need to escape the BOMB!!! Do you want a hint? ")
     if "yes" in theEscapeAns.lower():
+        #Hint
         print("Good job for picking this option! I'm Drake! You'll be greatful once I tell you you're third clue in the DARK...")
     elif "help" in theEscapeAns.lower():
         helper()
     else:
         print("Very well... Proceed as you like :|")
     print("Well lets begin! There are 15 Strings, and 2 of them need to be cut, which ones will you chose (answer the 2 numbers exactly like: 2 and 3)?")
+
+    #Wires
 
     rod ="||"
 
@@ -287,7 +293,9 @@ def theEscape():
     print("15 -->   " + rod + printWire15 + rod)
     time.sleep(0.5)   
     
+
     theEscapeWires = input("Answer: ")
+    #Question for wires
     if "3 and 7" in theEscapeWires.lower() or "7 and 3" in theEscapeWires.lower():
         print("Good job, you have diffused the bomb! Good job at taking a risk!")
     elif "help" in theEscapeWires.lower():
@@ -295,6 +303,7 @@ def theEscape():
     else:
         print("The bomb has exploded, but everyone was safe due to collaboration and you taking a risk for keeping them safe! It's all right! Let's try another game and we can come back here for another try.")
     
+    #Randomize Game
     advescape = [theThunderDome,theDragonsDen]
     advescaperand = random.choice(advescape)
     advescaperand()
@@ -302,7 +311,7 @@ def theEscape():
 
         
 
-
+#Random story used in executor
 def randomStory():
     print("The Random Adventure is.... (Drum Roll Please...Come on...)")
     playsound.playsound("drumroll.mp3")
