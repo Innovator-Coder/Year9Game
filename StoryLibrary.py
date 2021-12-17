@@ -7,7 +7,7 @@ import time
 import playsound
 import termcolor
 import os
-
+import Executor
 
 #Michael Chen's Function
 def clearConsole():
@@ -303,11 +303,6 @@ def theEscape():
     else:
         print("The bomb has exploded, but everyone was safe due to collaboration and you taking a risk for keeping them safe! It's all right! Let's try another game and we can come back here for another try.")
     
-    #Randomize Game
-    advescape = [theThunderDome,theDragonsDen]
-    advescaperand = random.choice(advescape)
-    advescaperand()
-
 
         
 
